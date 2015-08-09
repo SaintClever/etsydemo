@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etsydemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- the below (render) states that we want to render a file call header located in the layout folder -->
+<!-- note if we remove the equal sign from the opening erb tag the ruby code will be hidden. If we use the equal tag it will be showed -->
+
+<%= render 'layouts/header' %>
+  <div class="container">
+<!-- Adding code to your layout/application file applies the same exact code to EVERY page, almost like a default setup or template for all pages. Useful for headers, navigation, and footers (same functionality for every page) -->
+
+  <%= yield %>
+
+  <%= render 'layouts/footer' %>
+  </div>
+  
+</body>
+</html>
