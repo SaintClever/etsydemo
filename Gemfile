@@ -25,14 +25,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 
-
-
 # bootsrap-sass
 gem 'bootstrap-sass', '~> 3.3.5'
 
 # used for easy image uploads
 gem "paperclip", "~> 4.3"
+
 gem "paperclip-dropbox", ">= 1.1.7"
+# figaro: protect our account data
+gem 'figaro', '~> 0.7'
+
 
 group :production do
   gem 'pg'
