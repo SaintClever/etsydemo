@@ -34,6 +34,7 @@ gem "paperclip", "~> 4.3"
 gem "paperclip-dropbox", ">= 1.1.7"
 # figaro: protect our account data
 gem 'figaro', '~> 0.7'
+gem 'devise'
 
 
 group :production do
